@@ -1,54 +1,42 @@
-.container {
+/* Für alle Bildschirme */
+.col1, .col2, .col3, .col4, .col5, .col6 {
     float: left;
-    width: 95vw;
-    height: 95vh;
-    background-color: blueviolet;
+    width: 100%    
 }
 
-.header {
-    float: left;
-    width: 100%;
-    height: 20%;
-    background-color: rgb(0, 153, 255);
-}
+/* Für breite Bildschirme */
+@media (min-width: 30em) {
+    .col1 {        
+        float: left;
+        width: 16.66%
+    }
+    .col2 {        
+        float: left;
+        width: 33.33%
+    }
 
-.content {
-    float: left;
-    width: 100%;
-    height: 70%;
-    background-color: rgba(0, 255, 0, 0.908);
-}
+    .col3 {        
+        float: left;
+        width: 50%
+    }
 
-.footer {
-    float: left;
-    width: 100%;
-    height: 10%;
-    background-color: rgb(0, 153, 255);
-}
+    .col4 {        
+        float: left;
+        width: 66.66%
+    }
 
-.menue {
-    float: left;
-    width: 33.33%;
-    height: 100%;
-    background-color: rgb(140, 0, 255);
-}
+    .col5 {        
+        float: left;
+        width: 83.33%
+    }
 
-.inhalt {
-    float: left;
-    width: 66.66%;
-    height: 100%;
-    background-color: rgb(0, 255, 34);
-}
+    .col6 {        
+        float: left;
+        width: 100%
+    }
 
-.seite {
-    float: left;
-    width: 33.33%;
-    height: 100%;
-    background-color: rgba(255, 136, 0, 0.642);
-}
-.box {
-    float: left;
-    width: 100%;
-    height: 33.33%;
-    background-color: rgba(255, 0, 0, 0.214);
+    .container { 
+        float: left;
+        width: 95vw;
+    }
 }
